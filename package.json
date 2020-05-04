@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-ts-basics",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kazi Foyez Ahmed",
+    "email": "foyezar@gmail.com",
+    "url": "https://foyez.netlify.com"
+  },
+  "main": "build/app.js",
+  "scripts": {
+    "start": "npm run build && node build/app.js",
+    "dev": "nodemon",
+    "build": "rimraf ./build && tsc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "nodemon": "^2.0.3",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  }
+}
