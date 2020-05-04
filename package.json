@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-ts-basics",
+  "name": "typescript-starter",
   "version": "1.0.0",
   "author": {
     "name": "Kazi Foyez Ahmed",
@@ -12,9 +12,11 @@
     "dev": "nodemon",
     "build": "rimraf ./build && tsc",
     "test": "jest",
+    "test:watch": "jest --watchAll --coverage",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
   },
+  "engines": {},
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
@@ -36,6 +38,7 @@
     "nodemon": "^2.0.3",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
+    "ts-jest": "^25.4.0",
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
   }
